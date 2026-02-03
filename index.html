@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 1v1.lol Recreation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div id="game-container">
+        <!-- Three.js canvas will be appended here -->
+    </div>
+    <div id="menu" class="ui-overlay">
+        <button id="play-button">PLAY</button>
+    </div>
+    <div id="hud" class="ui-overlay" style="display: none;">
+        <div id="health-bar-container">
+            <progress id="health-bar" value="100" max="100"></progress>
+        </div>
+        <div id="ammo-count">Ammo: 30/30</div>
+        <div id="weapon-slots">
+            <div class="slot active">AR</div>
+            <div class="slot">Shotgun</div>
+            <div class="slot">Sniper</div>
+        </div>
+    </div>
+    <script type="module" src="Game.js"></script>
+    <script type="module" src="Input.js"></script>
+    <script type="module" src="Player.js"></script>
+    <script type="module" src="Weapons.js"></script>
+    <script type="module" src="BuildSystem.js"></script>
+    <script type="module" src="UI.js"></script>
+</body>
+</html>
